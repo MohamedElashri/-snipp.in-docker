@@ -1,11 +1,13 @@
 FROM node:lts-alpine as build-stage
 
 RUN apk add --no-cache git
+
+WORKDIR /app
+
 RUN git clone https://github.com/haxzie/snipp.in /app && cd /app
 # Create app directory
 COPY . /app
 
-WORKDIR /app
 COPY package*.json ./
 
 # Install app dependencies
