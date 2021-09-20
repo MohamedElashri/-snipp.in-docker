@@ -8,7 +8,7 @@ RUN git clone https://github.com/haxzie/snipp.in /app && cd /app
 # Create app directory
 COPY . /app
 
-COPY package*.json ./
+#COPY package*.json ./
 
 # Install app dependencies
 RUN npm install
