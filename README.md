@@ -1,2 +1,2 @@
-# -snipp.in-docker
-Docker build for  snipp.in snippet manager
+# snipp.in-docker
+Docker build for  [snipp.in](https://github.com/haxzie/snipp.in) snippet manager
