@@ -1,4 +1,4 @@
-FROM node:lts-alpine as build-stage
+FROM lts-alpine3.12 as build-stage
 
 RUN apk add --no-cache git
 
@@ -9,6 +9,7 @@ RUN git clone https://github.com/haxzie/snipp.in /app && cd /app
 COPY . /app
 
 #COPY package*.json ./
+
 
 # Install app dependencies
 RUN npm install
